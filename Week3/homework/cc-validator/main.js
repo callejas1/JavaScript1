@@ -1,7 +1,5 @@
 'use strict';
 
-//si la suma de el total de numeros entered son divididos por la longitud de la array -> si da 0 entonces otro numero tiene que enter
-
 // At least two different numbers should be represented
 
 function validateCreditNumber(creditCardNumber) {
@@ -23,19 +21,6 @@ function validateCreditNumber(creditCardNumber) {
     .reduce(function (a, b) {
       return a + b;
     }, 0);
-
-  // Alternate option
-  // while (cardNum) {
-  //   sum += cardNum % 10;
-  //   cardNum = Math.floor(cardNum / 10);
-  // }
-  // but prefer this for a str ->
-
-  for (let i = 0; i < len; i++) {
-    if (cardNum[i] === 0) {
-      return 'Enter a valid card number';
-    }
-  }
 
   // Check if sum of all numbers is > 16
   if (sum < 16) {
