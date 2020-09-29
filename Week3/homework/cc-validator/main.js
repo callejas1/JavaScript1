@@ -3,6 +3,7 @@
 // At least two different numbers should be represented
 
 function validateCreditNumber(creditCardNumber) {
+  
   // source https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split
   // Split will return string as array of str and join will remove any spaces
   const convertToArr = creditCardNumber.split(' ');
