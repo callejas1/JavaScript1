@@ -11,7 +11,7 @@ const cartForParty = {
 function calculateTotalPrice(num) {
   let sum = 0;
   for (const value of Object.values(num)) {
-    sum += value;
+    sum += parseFloat(value);
   }
   console.log('Total: €' + sum);
 }
