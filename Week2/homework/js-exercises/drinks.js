@@ -3,16 +3,13 @@
 const drinkTray = [];
 const drinkTypes = ['cola', 'lemonade', 'water'];
 
-function addDrinks(tray, types) {
-  for (let x = 0; x < 2; x++) {
-    tray.push(types[0]);
+for (let x = 0; x < 4; x++) {
+  const drinks = drinkTypes[x];
+  drinkTray.push(drinks); // pushes existing types onto empty arr (all 3)
+
+  if (drinkTray.length < 5) {
+    drinkTray.push(drinks); // will push again as long as length is less than 5
   }
-  for (let x = 0; x < 2; x++) {
-    tray.push(types[1]);
-  }
-  for (let x = 0; x < 1; x++) {
-    tray.push(types[2]);
-  }
-  console.log('Hey guys, I brought a ' + `${tray}.`);
 }
-addDrinks(drinkTray, drinkTypes);
+
+console.log('Hey guys, I brought a ' + `${drinkTray}`);

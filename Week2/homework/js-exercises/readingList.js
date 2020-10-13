@@ -20,6 +20,7 @@ const bookShelf = [
 ];
 
 bookShelf.forEach(function (item) {
+  console.log(item.title + ' by ' + item.author);
   if (item.alreadyRead === true) {
     console.log('You already read: ' + item.title);
   } else {

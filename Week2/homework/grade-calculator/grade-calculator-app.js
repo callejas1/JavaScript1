@@ -13,25 +13,25 @@ function gradesInput(studentScore, scorePossible) {
   // to assign grades respectively
 
   if (percentage <= 100 && percentage >= 90) {
-    console.log(`You got an A (${percentage}%)`);
+    return `You got an A (${percentage}%)`;
   } else if (percentage <= 89 && percentage >= 80) {
-    console.log(`You got a B (${percentage})%`);
+    return `You got a B (${percentage})%`;
   } else if (percentage <= 79 && percentage >= 70) {
-    console.log(`You got a C (${percentage}%)`);
+    return `You got a C (${percentage}%)`;
   } else if (percentage <= 69 && percentage >= 60) {
-    console.log(`You got a D (${percentage}%)`);
+    return `You got a D (${percentage}%)`;
   } else if (percentage <= 59 && percentage >= 50) {
-    console.log(`You got an E (${percentage}%)`);
+    return `You got an E (${percentage}%)`;
   } else if (percentage <= 49 && percentage >= 0) {
-    console.log(`You got an F (${percentage}%)`);
+    return `You got an F (${percentage}%)`;
   } else {
-    console.log('Incorrect value, please try again.');
+    return 'Incorrect value, please try again.';
   }
 }
 
 //Enter student grade and the highest test score possible to get results
 
-gradesInput(45, 50);
+console.log(gradesInput(45, 50));
 
 // Grade A (90% - 100%)
 // Grade B (80% - 89%)
